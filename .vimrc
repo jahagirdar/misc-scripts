@@ -33,3 +33,6 @@ augroup sifzgzip
 	au FileWritePost  *.sifz call gzip#write("gzip -S .sifz")
 augroup END
 nmap bu :buffers<cr>:b
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+set hidden
