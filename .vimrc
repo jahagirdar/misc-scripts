@@ -12,6 +12,13 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'jason0x43/vim-js-indent'
+  Plugin 'vim-scripts/Align'
+  Plugin 'vim-perl/vim-perl'
+  Plugin 'jahagirdar/Vimplate-Enhanced'
+  Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'tomtom/tlib_vim'
+  Plugin 'garbas/vim-snipmate'
+  Plugin 'honza/vim-snippets'
 call vundle#end()            " required
 filetype plugin indent on    " required
 if !exists("g:ycm_semantic_triggers")
@@ -36,3 +43,6 @@ nmap bu :buffers<cr>:b
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 set hidden
+let Vimplate= "$HOME/.vim/bundle/Vimplate-Enhanced/vimplate.pl"
+au BufNewFile *.ts  Vimplate ts 
+
