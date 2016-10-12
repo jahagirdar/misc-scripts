@@ -15,10 +15,12 @@ call vundle#begin()
   Plugin 'vim-scripts/Align'
   Plugin 'vim-perl/vim-perl'
   Plugin 'jahagirdar/Vimplate-Enhanced'
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'tomtom/tlib_vim'
-  Plugin 'garbas/vim-snipmate'
+  "Plugin 'MarcWeber/vim-addon-mw-utils'
+  "Plugin 'tomtom/tlib_vim'
+  "Plugin 'garbas/vim-snipmate'
   Plugin 'honza/vim-snippets'
+  Plugin 'sirver/ultisnips'
+"  Bundle 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on    " required
 if !exists("g:ycm_semantic_triggers")
@@ -46,3 +48,20 @@ set hidden
 let Vimplate= "$HOME/.vim/bundle/Vimplate-Enhanced/vimplate.pl"
 au BufNewFile *.ts  Vimplate ts 
 
+
+
+" make YCM compatible with UltiSnips (using supertab)
+" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-n>'
+"  
+"  " better key bindings for UltiSnipsExpandTrigger
+"  let g:UltiSnipsExpandTrigger="<cr>"
+"  let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+
+" UltiSnips triggering
+ let g:UltiSnipsExpandTrigger = '<C-j>'
+ let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+ let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
