@@ -20,6 +20,7 @@ call vundle#begin()
   "Plugin 'garbas/vim-snipmate'
   Plugin 'honza/vim-snippets'
   Plugin 'sirver/ultisnips'
+  Plugin 'bling/vim-bufferline'
 "  Bundle 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,8 +46,6 @@ nmap bu :buffers<cr>:b
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 set hidden
-let Vimplate= "$HOME/.vim/bundle/Vimplate-Enhanced/vimplate.pl"
-au BufNewFile *.ts  Vimplate ts 
 
 
 
@@ -65,3 +64,19 @@ au BufNewFile *.ts  Vimplate ts
  let g:UltiSnipsExpandTrigger = '<C-j>'
  let g:UltiSnipsJumpForwardTrigger = '<C-j>'
  let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+ " =============================
+ " Set default Templates for new files
+ " =============================
+let Vimplate= "$HOME/.vim/bundle/Vimplate-Enhanced/vimplate.pl"
+au BufNewFile *.ts  Vimplate ts 
+au BufNewFile *.pl  Vimplate pl 
+
+
+
+
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl', 'podchecker','perlcritic']
+
+let g:airline#extensions#branch#enabled = 1
+let g:airline_powerline_fonts = 1
+set laststatus=2 
