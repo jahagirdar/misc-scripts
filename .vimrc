@@ -20,9 +20,12 @@ call vundle#begin()
   "Plugin 'garbas/vim-snipmate'
   Plugin 'honza/vim-snippets'
   Plugin 'sirver/ultisnips'
-  Plugin 'bling/vim-bufferline'
+  "Plugin 'bling/vim-bufferline'
 "  Bundle 'ervandew/supertab'
 call vundle#end()            " required
+set t_Co=256
+"#set t_AB=^[[48;5;%dm
+"#set t_AF=^[[38;5;%dm
 filetype plugin indent on    " required
 if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}

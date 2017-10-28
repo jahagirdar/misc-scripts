@@ -2,12 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/champu/.oh-my-zsh
+export ZSH=/home/champu/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="hyperzsh"
+#ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,8 +86,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.alias.zsh
 
-export PATH=/opt/openlava-4.0/bin:/prj/tools/altera/15.1/modelsim_ase/bin:$PATH:/prj/tools/qflow/bin:/prj/tools/qflow/lib/graywolf/bin:/prj/bin
+export PATH=/opt/openlava-4.0/bin:/prj/tools/altera/15.1/modelsim_ase/bin:$PATH:/prj/tools/qflow/bin:/prj/tools/qflow/lib/graywolf/bin:/prj/bin:/prj/tools/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/prj/tools/qflow/lib/:/prj/lib
 source ~/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh 
 export MTI_VCO_MODE=64
 export WORKSPACE=WS
+export PERL5LIB=lib
