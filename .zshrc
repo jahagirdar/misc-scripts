@@ -91,4 +91,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/prj/tools/qflow/lib/:/prj/lib
 source ~/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh 
 export MTI_VCO_MODE=64
 export WORKSPACE=WS
-export PERL5LIB=lib
+export PERL5LIB=lib:/prj/gitolite/repo/DesignWin/DesignWin-Utils/lib
+export MANPATH=${MANPATH}:/usr/local/texlive/2017/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2017/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2017/bin/x86_64-linux
+
