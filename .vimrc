@@ -55,17 +55,6 @@ set hidden
 
 
 
-" make YCM compatible with UltiSnips (using supertab)
-" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-" let g:SuperTabDefaultCompletionType = '<C-n>'
-"  
-"  " better key bindings for UltiSnipsExpandTrigger
-"  let g:UltiSnipsExpandTrigger="<cr>"
-"  let g:UltiSnipsJumpForwardTrigger="<c-j>"
-"  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-
 " UltiSnips triggering
  let g:UltiSnipsExpandTrigger = '<C-j>'
  let g:UltiSnipsJumpForwardTrigger = '<C-j>'
@@ -77,6 +66,9 @@ let Vimplate= "$HOME/.vim/bundle/Vimplate-Enhanced/vimplate.pl"
 au BufNewFile *.ts  Vimplate ts 
 au BufNewFile *.pl  Vimplate pl 
 
+let g:ale_linters ={
+			\ 'perl':['perl','perlcritic','podchecker'],
+			\}
 
 
 
