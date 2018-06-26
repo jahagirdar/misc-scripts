@@ -12,6 +12,7 @@ call vundle#begin()
   "Plugin 'Quramy/tsuquyomi'
   "Plugin 'scrooloose/syntastic'
   Plugin 'bling/vim-airline'
+  Plugin 'farseer90718/vim-taskwarrior'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'jason0x43/vim-js-indent'
@@ -49,6 +50,8 @@ augroup sifzgzip
 	au FileWritePost  *.sifz call gzip#write("gzip -S .sifz")
 augroup END
 nmap bu :buffers<cr>:b
+  nmap <silent> <C-k> <Plug>(ale_previous)
+  nmap <silent> <C-j> <Plug>(ale_next)
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 set hidden
