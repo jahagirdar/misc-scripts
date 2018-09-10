@@ -71,9 +71,14 @@ au BufNewFile *.pl  Vimplate pl
 
 let g:ale_linters ={
 			\ 'perl':['perl','perlcritic','podchecker'],
+			\ 'cpp' :['clang', 'clangcheck', 'clangtidy', 'cppcheck', 'g++'],
 			\}
 
-
+let g:ale_fixers = {
+			\ 'cpp' : [
+			\'clang-format'
+			\],
+			\}
 
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_perl_checkers = ['perl', 'podchecker','perlcritic']
@@ -81,3 +86,18 @@ let g:syntastic_perl_checkers = ['perl', 'podchecker','perlcritic']
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2 
+highlight default link taskwarrior_tablehead   Tabline
+highlight default link taskwarrior_field       IncSearch
+highlight default link taskwarrior_selected    Visual
+highlight default link taskwarrior_id          VarId
+highlight default link taskwarrior_project     String
+highlight default link taskwarrior_Status      Include
+highlight default link taskwarrior_priority    Class
+highlight default link taskwarrior_due         Todo
+highlight default link taskwarrior_end         Keyword
+highlight default link taskwarrior_description Normal
+highlight default link taskwarrior_entry       Special
+highlight default link taskwarrior_depends     Todo
+highlight default link taskwarrior_tags        Keyword
+highlight default link taskwarrior_uuid        VarId
+highlight default link taskwarrior_urgency     Todo
