@@ -101,3 +101,6 @@ highlight default link taskwarrior_depends     Todo
 highlight default link taskwarrior_tags        Keyword
 highlight default link taskwarrior_uuid        VarId
 highlight default link taskwarrior_urgency     Todo
+"setglobal spell spelllang=en_us
+
+colorscheme elflord

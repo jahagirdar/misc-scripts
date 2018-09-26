@@ -8,3 +8,6 @@ alias gitolite="cd /prj/gitolite"
 alias emacs="/opt/bin/emacs"
 alias ghdl="/opt/bin/ghdl"
 alias vit="perl /opt/bin/vit"
+alias intensetask="task intensivate"
+alias python3=python36
+alias phone="cat /prj/records/phone"
